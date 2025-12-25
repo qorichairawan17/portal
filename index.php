@@ -25,6 +25,8 @@
     <div class="page-wrapper">
 
         <?php
+        error_reporting(E_ALL);
+        ini_set('display_errors', 1);
         // Ambil data EIS dari skrip
         require_once 'scripts/eis.php';
         $eisData = getCourtEisData();
