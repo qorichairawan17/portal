@@ -110,8 +110,17 @@ function getCourtEisData()
     $courtName = $courtConfig['name'];
 
     // Cari index dari pengadilan yang kita inginkan menggunakan fungsi bawaan PHP
-    $courtNamesColumn = array_column($allRankings, 3);
-    $courtIndex = array_search($courtName, $courtNamesColumn);
+    // $courtNamesColumn = array_column($allRankings, 3);
+    // $courtIndex = array_search($courtName, $courtNamesColumn);
+
+    // Cari index dari pengadilan yang kita inginkan (PHP 5.4 compatible)
+    $courtIndex = false;
+    foreach ($allRankings as $index => $row) {
+        if (isset($row[3]) && $row[3] === $courtName) {
+            $courtIndex = $index;
+            break;
+        }
+    }
 
     if ($courtIndex === false) {
         return getDefaultEisData("Data untuk '{$courtName}' tidak ditemukan dalam peringkat.");
