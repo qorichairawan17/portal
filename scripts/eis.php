@@ -1,5 +1,5 @@
 <?php
-
+date_default_timezone_set('Asia/Jakarta');
 /**
  * Menyediakan data default jika terjadi kegagalan atau data tidak ditemukan.
  * @param string $message Pesan informasi atau error.
