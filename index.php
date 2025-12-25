@@ -61,7 +61,8 @@
             ['name' => 'MyASN BKN', 'url' => 'https://asndigital.bkn.go.id/', 'icon' => 'fa-user'],
             ['name' => 'SIMARI', 'url' => 'https://simari.mahkamahagung.go.id/', 'icon' => 'fa-landmark'],
             ['name' => 'SIKEP', 'url' => 'https://sikep.mahkamahagung.go.id/site/login', 'icon' => 'fa-users'],
-            ['name' => 'SIWAKJON', 'url' => 'http://siwakjon3.local', 'icon' => 'fa-desktop'],
+            // ['name' => 'SIWAKJON', 'url' => 'http://siwakjon3.local', 'icon' => 'fa-desktop'],
+            ['name' => 'SIWAKJON <br> <span class="badge bg-danger">Down</span>', 'url' => '#', 'icon' => 'fa-desktop'],
             ['name' => 'Cerdas', 'url' => 'http://192.168.1.147/cerdas', 'icon' => 'fa-chart-line'],
             ['name' => 'E-SuKa', 'url' => 'https://www.e-suka.pn-lubukpakam.go.id/', 'icon' => 'fa-file-lines'],
             ['name' => 'SAKTI', 'url' => 'https://sakti.kemenkeu.go.id/', 'icon' => 'fa-money-bill'],
@@ -81,14 +82,14 @@
                 <span class="badge bg-danger me-3 flex-shrink-0">PENGUMUMAN</span>
                 <div class="ticker-wrap">
                     <div id="pengumuman-slider">
-                        <?php if (!empty($pengumuman_items)) : ?>
-                            <?php foreach ($pengumuman_items as $p) : ?>
+                        <?php if (!empty($pengumuman_items)): ?>
+                            <?php foreach ($pengumuman_items as $p): ?>
                                 <a href="<?= $p['link'] ?>" target="_blank" class="text-white text-decoration-none">
                                     <span class="badge bg-warning text-dark me-2"><?= $p['pubDate'] ?></span> <?= $p['title'] ?>
                                 </a>
                                 <span class="mx-3 text-white-50">|</span>
                             <?php endforeach; ?>
-                        <?php else : ?>
+                        <?php else: ?>
                             <span class="text-white">Tidak ada pengumuman.</span>
                         <?php endif; ?>
                     </div>
@@ -109,20 +110,30 @@
 
                 <?php
                 if (date('d') == 29 || date('d') == 30 || date('d') == 31) {
-                ?>
+                    ?>
                     <div class="alert alert-success mt-3" role="alert">
                         <p class="mb-0 text-center">
                             <i class="fas fa-info-circle me-2"></i>
-                            <strong>Pengingat: Jangan lupa untuk mengumpulkan laporan PKP (Penilaian Kinerja Pegawai)</strong>
+                            <strong>Pengingat: Jangan lupa untuk mengerjakan dan mengumpulkan laporan PKP (Penilaian Kinerja
+                                Pegawai)</strong>
                         </p>
                     </div>
-                <?php
+                    <?php
                 }
                 ?>
 
+                <div class="alert alert-danger mt-3" role="alert">
+                    <p class="mb-0 text-center">
+                        <i class="fas fa-info-circle me-2"></i>
+                        Saat ini server yang menyediakan akses SIWAKJON mengalami kerusakan, dan berdampak tidak
+                        dapatnya diakses aplikasi dalam jangka waktu yang tidak dapat ditentukan.
+                        <br>
+                        Pengajuan perbaikan server masih menunggu persetujuan Sub Bagian. Umum dan Keuangan.
+                    </p>
+                </div>
 
                 <!-- Bagian Statistik EIS -->
-                <?php if ($eisData['status'] == 1) : ?>
+                <?php if ($eisData['status'] == 1): ?>
                     <!-- Peringkat & Capaian -->
                     <div class="row g-4 mb-4">
                         <div class="col-md-6">
@@ -131,7 +142,9 @@
                                     <h5 class="card-title text-muted mb-2">Peringkat Nasional</h5>
                                     <div class="d-flex align-items-baseline">
                                         <h1 class="display-3 fw-bold me-2 text-warning"><?= $eisData['rank']; ?></h1>
-                                        <p class="mb-0">pada Kelas <?= $eisData['class']; ?> / Kategori <?= $eisData['category']; ?></p>
+                                        <p class="mb-0">pada Kelas <?= $eisData['class']; ?> / Kategori
+                                            <?= $eisData['category']; ?>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -196,7 +209,7 @@
                             </div>
                         </div>
                     </div>
-                <?php else : ?>
+                <?php else: ?>
                     <div class="alert alert-warning" role="alert">
                         <i class="fas fa-exclamation-triangle me-2"></i>
                         <strong>Gagal Memuat Data EIS:</strong> <?= $eisData['info']; ?>
@@ -205,9 +218,10 @@
 
                 <!-- Widget Button Group Link -->
                 <div class="row g-4 justify-content-center">
-                    <?php foreach ($applications as $app) : ?>
+                    <?php foreach ($applications as $app): ?>
                         <div class="col-6 col-md-4 col-lg-3">
-                            <a target="_blank" href="<?= $app['url']; ?>" class="card portal-card h-100 text-decoration-none">
+                            <a target="_blank" href="<?= $app['url']; ?>"
+                                class="card portal-card h-100 text-decoration-none">
                                 <div class="card-body d-flex flex-column justify-content-center align-items-center p-4">
                                     <i class="fas <?= $app['icon']; ?> fa-3x mb-3 text-warning"></i>
                                     <h5 class="card-title mb-0"><?= $app['name']; ?></h5>
@@ -219,14 +233,16 @@
 
                 <div class="row">
                     <div class="col-12 text-center">
-                        <p class="text-muted mt-5 mb-0">Terakhir diperbarui: 03 November 2025 15:16 WIB</p>
+                        <p class="text-muted mt-5 mb-0">Terakhir diperbarui: 25 Desember 2025 16:48 WIB</p>
                     </div>
                     <div class="alert alert-warning mt-3" role="alert">
                         <p class="mb-0 text-center">
                             <i class="fas fa-info-circle me-2"></i>
-                            <strong>Catatan:</strong> Beberapa aplikasi mungkin hanya dapat diakses dari jaringan internal kantor. Silakan hubungi administrator sistem jika mengalami kesulitan akses.
+                            <strong>Catatan:</strong> Beberapa aplikasi mungkin hanya dapat diakses dari jaringan
+                            internal kantor. Silakan hubungi administrator sistem jika mengalami kesulitan akses.
                             <br>
-                            Jika tidak terdapat aplikasi yang Anda cari, silakan hubungi Tim IT Pengadilan Negeri Lubuk Pakam.
+                            Jika tidak terdapat aplikasi yang Anda cari, silakan hubungi Tim IT Pengadilan Negeri Lubuk
+                            Pakam.
                         </p>
                     </div>
                 </div>
