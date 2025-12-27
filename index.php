@@ -53,7 +53,7 @@
         // Data Aplikasi
         $applications = [
             ['name' => 'Website', 'url' => 'https://pn-lubukpakam.go.id/', 'icon' => 'fa-globe'],
-            ['name' => 'SIPP 6.0.1', 'url' => 'http://192.168.1.147/SIPP330', 'icon' => 'fa-scale-balanced'],
+            ['name' => 'SIPP 6.0.1', 'url' => 'http://192.168.1.147/sipp', 'icon' => 'fa-scale-balanced'],
             ['name' => 'MIS 6.0.1', 'url' => 'http://192.168.1.147/mis', 'icon' => 'fa-chart-pie'],
             ['name' => 'EIS Badilum', 'url' => 'https://evaluasi.badilum.mahkamahagung.go.id/', 'icon' => 'fa-chart-line'],
             ['name' => 'PTSP+', 'url' => 'http://192.168.1.147/ptsp', 'icon' => 'fa-desktop'],
