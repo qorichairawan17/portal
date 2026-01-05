@@ -52,30 +52,30 @@
 
         // Data Aplikasi
         $applications = [
-            ['name' => 'Website', 'url' => 'https://pn-lubukpakam.go.id/', 'icon' => 'fa-globe'],
-            ['name' => 'SIPP 6.0.1', 'url' => 'http://192.168.1.147/sipp', 'icon' => 'fa-scale-balanced'],
-            ['name' => 'MIS 6.0.1', 'url' => 'http://192.168.1.147/mis', 'icon' => 'fa-chart-pie'],
-            ['name' => 'EIS Badilum', 'url' => 'https://evaluasi.badilum.mahkamahagung.go.id/', 'icon' => 'fa-chart-line'],
-            ['name' => 'PTSP+', 'url' => 'http://192.168.1.147/ptsp', 'icon' => 'fa-desktop'],
-            ['name' => 'SIMETRI', 'url' => 'http://192.168.1.147/simetri', 'icon' => 'fa-envelope'],
-            ['name' => 'KOMDANAS', 'url' => 'https://komdanas.mahkamahagung.go.id/', 'icon' => 'fa-database'],
-            ['name' => 'E-Court', 'url' => 'https://ecourt.mahkamahagung.go.id/Login', 'icon' => 'fa-gavel'],
-            ['name' => 'E-Berpadu', 'url' => 'https://eberpadu.mahkamahagung.go.id/', 'icon' => 'fa-users'],
-            ['name' => 'MyASN BKN', 'url' => 'https://asndigital.bkn.go.id/', 'icon' => 'fa-user'],
-            ['name' => 'SIMARI', 'url' => 'https://simari.mahkamahagung.go.id/', 'icon' => 'fa-landmark'],
-            ['name' => 'SIKEP', 'url' => 'https://sikep.mahkamahagung.go.id/site/login', 'icon' => 'fa-users'],
-            // ['name' => 'SIWAKJON', 'url' => 'http://siwakjon3.local', 'icon' => 'fa-desktop'],
-            ['name' => 'SIWAKJON <br> <span class="badge bg-danger">Down</span>', 'url' => '#', 'icon' => 'fa-desktop'],
-            ['name' => 'Cerdas', 'url' => 'http://192.168.1.147/cerdas', 'icon' => 'fa-chart-line'],
-            ['name' => 'E-SuKa', 'url' => 'https://www.e-suka.pn-lubukpakam.go.id/', 'icon' => 'fa-file-lines'],
-            ['name' => 'SAKTI', 'url' => 'https://sakti.kemenkeu.go.id/', 'icon' => 'fa-money-bill'],
-            ['name' => 'SISUPER', 'url' => 'http://esurvey.badilum.mahkamahagung.go.id/', 'icon' => 'fa-star'],
-            ['name' => 'Eraterang', 'url' => 'https://eraterang.badilum.mahkamahagung.go.id/masuk', 'icon' => 'fa-file-signature'],
-            ['name' => 'Direktori Putusan', 'url' => 'https://putusan3.mahkamahagung.go.id/', 'icon' => 'fa-book-bookmark'],
-            ['name' => 'PERKUSI', 'url' => 'https://eksekusi.badilum.mahkamahagung.go.id/', 'icon' => 'fa-hammer'],
-            ['name' => 'SIWAS', 'url' => 'https://siwas.mahkamahagung.go.id/', 'icon' => 'fa-user-shield'],
-            ['name' => 'SP4N-LAPOR', 'url' => 'https://www.lapor.go.id/', 'icon' => 'fa-user-shield'],
-            ['name' => 'Pelaporan Badilum', 'url' => 'https://pelaporan.badilum.mahkamahagung.go.id/login', 'icon' => 'fa-file-alt'],
+            ['name' => 'Website', 'url' => 'https://pn-lubukpakam.go.id/', 'icon' => 'fa-globe', 'new' => false],
+            ['name' => 'SIPP 6.0.1', 'url' => 'http://192.168.1.147/sipp', 'icon' => 'fa-scale-balanced', 'new' => false],
+            ['name' => 'MIS 6.0.1', 'url' => 'http://192.168.1.147/mis', 'icon' => 'fa-chart-pie', 'new' => false],
+            ['name' => 'EIS Badilum', 'url' => 'https://evaluasi.badilum.mahkamahagung.go.id/', 'icon' => 'fa-chart-line', 'new' => false],
+            ['name' => 'PTSP+', 'url' => 'http://192.168.1.147/ptsp', 'icon' => 'fa-desktop', 'new' => false],
+            ['name' => 'SIMETRI', 'url' => 'http://192.168.1.147/simetri', 'icon' => 'fa-envelope', 'new' => false],
+            ['name' => 'eMonev', 'url' => 'http://192.168.1.147/emonev', 'icon' => 'fa-file', 'new' => true],
+            ['name' => 'Cerdas', 'url' => 'http://192.168.1.147/cerdas', 'icon' => 'fa-chart-line', 'new' => false],
+            ['name' => 'KOMDANAS', 'url' => 'https://komdanas.mahkamahagung.go.id/', 'icon' => 'fa-database', 'new' => false],
+            ['name' => 'E-Court', 'url' => 'https://ecourt.mahkamahagung.go.id/Login', 'icon' => 'fa-gavel', 'new' => false],
+            ['name' => 'E-Berpadu', 'url' => 'https://eberpadu.mahkamahagung.go.id/', 'icon' => 'fa-users', 'new' => false],
+            ['name' => 'MyASN BKN', 'url' => 'https://asndigital.bkn.go.id/', 'icon' => 'fa-user', 'new' => false],
+            ['name' => 'SIMARI', 'url' => 'https://simari.mahkamahagung.go.id/', 'icon' => 'fa-landmark', 'new' => false],
+            ['name' => 'SIKEP', 'url' => 'https://sikep.mahkamahagung.go.id/site/login', 'icon' => 'fa-users', 'new' => false],
+            ['name' => 'SIWAKJON <br> <span class="badge bg-danger">Down</span>', 'url' => '#', 'icon' => 'fa-desktop', 'new' => false],
+            ['name' => 'E-SuKa', 'url' => 'https://www.e-suka.pn-lubukpakam.go.id/', 'icon' => 'fa-file-lines', 'new' => false],
+            ['name' => 'SAKTI', 'url' => 'https://sakti.kemenkeu.go.id/', 'icon' => 'fa-money-bill', 'new' => false],
+            ['name' => 'SISUPER', 'url' => 'http://esurvey.badilum.mahkamahagung.go.id/', 'icon' => 'fa-star', 'new' => false],
+            ['name' => 'Eraterang', 'url' => 'https://eraterang.badilum.mahkamahagung.go.id/masuk', 'icon' => 'fa-file-signature', 'new' => false],
+            ['name' => 'Direktori Putusan', 'url' => 'https://putusan3.mahkamahagung.go.id/', 'icon' => 'fa-book-bookmark', 'new' => false],
+            ['name' => 'PERKUSI', 'url' => 'https://eksekusi.badilum.mahkamahagung.go.id/', 'icon' => 'fa-hammer', 'new' => false],
+            ['name' => 'SIWAS', 'url' => 'https://siwas.mahkamahagung.go.id/', 'icon' => 'fa-user-shield', 'new' => false],
+            ['name' => 'SP4N-LAPOR', 'url' => 'https://www.lapor.go.id/', 'icon' => 'fa-user-shield', 'new' => false],
+            ['name' => 'Pelaporan Badilum', 'url' => 'https://pelaporan.badilum.mahkamahagung.go.id/login', 'icon' => 'fa-file-alt', 'new' => false],
         ];
         ?>
 
@@ -113,7 +113,7 @@
 
                 <?php
                 if (date('d') == 29 || date('d') == 30 || date('d') == 31) {
-                    ?>
+                ?>
                     <div class="alert alert-success mt-3" role="alert">
                         <p class="mb-0 text-center">
                             <i class="fas fa-info-circle me-2"></i>
@@ -121,7 +121,7 @@
                                 Pegawai)</strong>
                         </p>
                     </div>
-                    <?php
+                <?php
                 }
                 ?>
 
@@ -224,10 +224,10 @@
                     <?php foreach ($applications as $app): ?>
                         <div class="col-6 col-md-4 col-lg-3">
                             <a target="_blank" href="<?= $app['url']; ?>"
-                                class="card portal-card h-100 text-decoration-none">
+                                class="card portal-card h-100 text-decoration-none <?= $app['new'] ? 'border border-3 border-success' : ''; ?>">
                                 <div class="card-body d-flex flex-column justify-content-center align-items-center p-4">
                                     <i class="fas <?= $app['icon']; ?> fa-3x mb-3 text-warning"></i>
-                                    <h5 class="card-title mb-0"><?= $app['name']; ?></h5>
+                                    <h5 class="card-title mb-0"><?= $app['name']; ?> <?= $app['new'] ? '<span class="badge bg-success">Baru</span>' : ''; ?></h5>
                                 </div>
                             </a>
                         </div>
