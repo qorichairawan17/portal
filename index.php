@@ -58,7 +58,7 @@
             ['name' => 'EIS Badilum', 'url' => 'https://evaluasi.badilum.mahkamahagung.go.id/', 'icon' => 'fa-chart-line', 'new' => false],
             ['name' => 'PTSP+', 'url' => 'http://192.168.1.147/ptsp', 'icon' => 'fa-desktop', 'new' => false],
             ['name' => 'SIMETRI', 'url' => 'http://192.168.1.147/simetri', 'icon' => 'fa-envelope', 'new' => false],
-            ['name' => 'eMonev', 'url' => 'http://192.168.1.147/emonev', 'icon' => 'fa-file', 'new' => true],
+            ['name' => 'SELARAS', 'url' => 'http://192.168.1.147/selaras', 'icon' => 'fa-file', 'new' => true],
             ['name' => 'Cerdas', 'url' => 'http://192.168.1.147/cerdas', 'icon' => 'fa-chart-line', 'new' => false],
             ['name' => 'KOMDANAS', 'url' => 'https://komdanas.mahkamahagung.go.id/', 'icon' => 'fa-database', 'new' => false],
             ['name' => 'E-Court', 'url' => 'https://ecourt.mahkamahagung.go.id/Login', 'icon' => 'fa-gavel', 'new' => false],
