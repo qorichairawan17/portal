@@ -66,7 +66,7 @@
             ['name' => 'MyASN BKN', 'url' => 'https://asndigital.bkn.go.id/', 'icon' => 'fa-user', 'new' => false],
             ['name' => 'SIMARI', 'url' => 'https://simari.mahkamahagung.go.id/', 'icon' => 'fa-landmark', 'new' => false],
             ['name' => 'SIKEP', 'url' => 'https://sikep.mahkamahagung.go.id/site/login', 'icon' => 'fa-users', 'new' => false],
-            ['name' => 'SIWAKJON <br> <span class="badge bg-danger">Down</span>', 'url' => '#', 'icon' => 'fa-desktop', 'new' => false],
+            ['name' => 'SIWAKJON <br> <span class="badge bg-warning">Temporary</span>', 'url' => 'http://siwakjon.local', 'icon' => 'fa-desktop', 'new' => false],
             ['name' => 'E-SuKa', 'url' => 'https://www.e-suka.pn-lubukpakam.go.id/', 'icon' => 'fa-file-lines', 'new' => false],
             ['name' => 'SAKTI', 'url' => 'https://sakti.kemenkeu.go.id/', 'icon' => 'fa-money-bill', 'new' => false],
             ['name' => 'SISUPER', 'url' => 'http://esurvey.badilum.mahkamahagung.go.id/', 'icon' => 'fa-star', 'new' => false],
@@ -132,6 +132,9 @@
                         dapatnya diakses aplikasi dalam jangka waktu yang tidak dapat ditentukan.
                         <br>
                         Pengajuan perbaikan server masih menunggu persetujuan Sub Bagian. Umum dan Keuangan.
+                    </p>
+                    <p>
+                        Untuk sementara waktu, Kami akan membuka akses sementara aplikasi SIWAKJON pada pukul 08:00 - 10:00 WIB setiap harinya, sampai server dapat diperbaiki.
                     </p>
                 </div>
 
